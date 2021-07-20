@@ -16,10 +16,13 @@ import 'bootstrap';
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
-
-import 'bootstrap';
 import 'select2/dist/css/select2.min.css'
 import 'jquery-bar-rating/dist/themes/css-stars';
+
+
+document.addEventListener('turbolinks:load', () => {
+  initSelect2();
+});
 
 
 
